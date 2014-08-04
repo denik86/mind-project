@@ -1,0 +1,38 @@
+<tips>
+	<tip id="1" plang="java">
+		<title>Fine riga e EOF</title>
+		<tag>fine EOF scanner ascii file</tag>
+		<text>Un file di testo è un file composto da caratteri (nel nostro caso di caratteri di un byte secondo la codifica ASCII). Il file è diviso in righe, cioè sequenze di caretteri terminanti dalla stringa "fineriga". Il fineriga dipende dal sistema operativo:
+			- "\r\n" Windows
+			- "\n" Unix -Linux
+			- "\r" MAC OS
+		L'uso di un Scanner e del metodo nextLine() in ingresso, di PrintWriter e del metodo println() in uscita, consentono di ignorare il problema della dipendenza del fineriga dall'ambiente in cui un'applicazione è utilizzata.
+		Se si elabora un file di testo di un carattere alla volta è necessario gestire le differenze fra i diversi ambienti, in particolare il fatto che in due casi la stringa fineriga è di un carattere e nell'altro è composta da due caratteri.
+		La fine di un file (EOF) corrisponde alla fine dei dati che compongono il file. L'EOF non è un carattere contenuto nel file. La condizione di EOF viene segnalata quando si crerca di leggere un byte o un carattere dopo la fine fisica di un file.</text>
+	</tip>
+	<tip id="2" plang="java">
+		<title>Tipi di dati fondamentali (limiti)</title>
+		<tag>limiti max min massimo minimo value NaN IEEE</tag>
+		<text>Se servono i valori massimi e minimi dei numeri rappresentati con i vari tipi di dati non occorre ricordarli, perchè nel pacchetto java.lang della libreria standard per ciascun tipo di dati fondamentali è presente una classe in cui sono definiti questi valori come costanti:
+			- tipo   -   val minimo      -   val massimo     -
+
+			- byte   - Byte.MIN_VALUE    - Byte.MAX_VALUE    -
+			- short  - Short.MIN_VALUE   - Short.MAX_VALUE   -
+			- int    - Integer.MIN_VALUE - Integer.MAX_VALUE -
+			- long   - Long.MIN_VALUE    - long.MAX_VALUE    -
+			- float  - Float.MIN_VALUE   - Float.MAX_VALUE   -
+			- double - Double.MIN_VALUE  - Double.MAX_VALUE  -
+
+		Lo standard IEEE 754 prevede anche la rappresentazione di Nan, di +infinito e -infinito:
+		- Double.NaN
+		- Double.NEGATIVE_INFINITY
+		- Double.POSITIVE_INFINITY
+		- Float.NaN
+		- Float.NEGATIVE_INFINITY
+		- Float.POSITIVE_INFINITY
+
+		In Java tutti i tipi di dati fondamentali per numeri in virgola mobile usano internamente una rappresentazione binaria codificata dello standard internazionale IEEE 754.
+		La divisione con divisore zero non è un errore se effettuata tra numeri in virgola mobile:
+		- se il dividendo è diverso da zero, il risultato è infinito (con il segno del dividendo);
+		- se anche il dividendo è zero, il risultato non è un numero e viene usata la codifica speciale NaN (Not a Number).</text>
+	</tip>
