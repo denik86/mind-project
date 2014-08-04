@@ -1,0 +1,47 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<quiz>
+  <question id="1" course="fondamenti di informatica" arg="rappresentazione dell'informazione"> <q>L'addizione di due variabili di tipo int in Java:</q>
+    <ans id="1" correct="0">Calcola sempre il valore corretto della somma perchè i numeri interi in Java sono espressi in complemento a due</ans>
+    <ans id="2" correct="1">Può calcolare un valore errato per la somma</ans>
+    <ans id="3" correct="0">Può calcolare un valore errato per la somma solo se entrambe le variabili contengono valori negativi con un grande valore assoluto</ans>
+    <ans id="4" correct="0">Nessuna delle risposte precedenti</ans>
+    <exp>Calcola un valore errato in caso di errore di trabocco (overflow)</exp>
+  </question>
+  <question id="2" course="fondamenti di informatica" arg="rappresentazione dell'informazione"> <q>In formato IEEE 754 doppia precisione sono rappresentabili</q>
+    <ans id="1" correct="0">Tutti i numeri appartenenti all'intervallo [-1,1]</ans>
+    <ans id="2" correct="0">Tutti i numeri razionali</ans>
+    <ans id="3" correct="1">Un sottoinsieme di numeri razionali dell'intervallo [-1,1]</ans>
+    <ans id="4" correct="0">Nessuna delle risposte precedenti</ans>
+    <exp>Sonon rappresentabili, fra gli altri, un sottoinsieme di numeri razionali dell'intervallo [-1,1]</exp>
+  </question>
+  <question id="3" course="fondamenti di informatica" arg="Java - Classi"> <q>All'interno di una sottoclasse, per accedere alla versione origninale di un metodo sovrascritto presente nella superclasse:</q>
+    <ans id="1" correct="1">Si usa il riferimento implicito super</ans>
+    <ans id="2" correct="0">Si usa il riferimento implicito this</ans>
+    <ans id="3" correct="0">Si usa un riferimento a un esemplare della superclasse, costruitp invocandone un costruttore esplicito</ans>
+    <exp></exp>
+  </question>
+  <question id="5" course="algoritmi" arg="complessità temporale"> <q>Sia dato un elenco di n nomi ordinati alfabeticamente. Con riferimento al caso medio, quale è il tempo T che impiega l'algoritmo di ricerca sequenziale per reperire una informazione contenuta nell'elenco?</q>
+    <ans id="1" correct="0">T = n</ans>
+    <ans id="2" correct="0">T = log(n)</ans>
+    <ans id="3" correct="1">T = (n+1)/2</ans>
+    <ans id="4" correct="0">Nessuna delle precedenti</ans>
+    <exp></exp>
+  </question>
+  <question id="4" course="fondamenti di informatica" arg="rappresentazione dell'informazione"> <q></q>
+    <ans id="1" correct="0"></ans>
+    <ans id="2" correct="1"></ans>
+    <ans id="3" correct="0"></ans>
+    <ans id="4" correct="0"></ans>
+    <exp></exp>
+  </question>
+
+
+   <question id="" course="" arg=""> <q></q>
+    <ans id="1" correct="0"></ans>
+    <ans id="2" correct="0"></ans>
+    <ans id="3" correct="0"></ans>
+    <ans id="4" correct="0"></ans>
+    <exp></exp>
+  </question>
+
+</quiz>
