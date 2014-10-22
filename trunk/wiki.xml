@@ -1,11 +1,24 @@
 <wiki>
-<article id="1" topic="hacking,internet" >
+<article id="1" topic="hacking,internet">
 <title>Kevin Mitnick</title>
 <text>Gli Hacker sono evidentemente vittime di pregiudizi ed ipocrisie che ci riportano direttamente al medioevo. I sistemi di sicurezza e polizia di tutto il mondo, così come l'opinione pubblica, non contemplano alcuna distinzione fra l'hacking divulgativo (che ha esclusivamente scopi di conoscenza) ed hacking speculativo (che ha obiettivi di delinquenza telematica).
 inevitabile, quindi, che il più geniale e tentacolare degli Hacker, venisse inseguito e condannato come un anti-Cristo, con un arresto spettacolare, il 15 febbraio 1995. Kevin Mitnick oggi è nuovamente in libertà. Il 21 gennaio <temp>mettere data </temp> è stato rilasciato a patto di non utilizzare mai più un computer, cosa che ovviamente è impossibile da rispettare.
 <head>Da brutto anatroccolo a condor</head>
 Cacciato da scuola a 13 anni per violazione di archivi istituzionali, messo in prigione nel 1983 per elusione dei codici di accesso del Dipartimento di Difesa Americana, arrestato ancora nel 1987 e nel 1988 per reati informatico/telefonici, ed infine definivamente condannato qualche anno più tardi per reiterato accesso ai dati riservati dei più colossali leviatani della tecnologia: IBM, Fujitsu, Nokia, Motorola, Nec, Apple, Sun MicroSystem. Le richieste di risarcimento ammontano a centinaia di milioni di dollari.
 </text>
+</article>
+
+<article id="2" topic="windows,tool,msc,controllo">
+<title>MMC: un tool per Windows</title>
+<text>In tutti i sistemi Windows è integrata la Microsoft Management Console (MMC), uno strumento che ci permette di ottenere il pieno controllo del sistema operativo e gestire ogni funzione. E' una sorta di contenitore per gli "snap-in", vale a dire plug-in che possono essere aggiunti per estendere le funzionalità. Pee richiamare la console andare su Esegui e digitare "mmc". Windows dispone di molti snap-in predefiniti che si trovano in C:\Windows\System32 con file di estensione msc (Microsoft Management Console Snap-in Control File).
+Esempi di utility sono la funzione di deframmentazione del disco, la finestra di gestione delle periferiche, il visualizzatore di eventi, ecc.
+Questi plug-in possono essere richiamati tramite menù File -> Apri, oppure da Esegui richiamando il file .msc.
+Uno degli snap-in più interessanti è services.msc, dove possiamo visualizzare lo stato dei servizi del sistema operativo, che vengono avviati all'avvio di Windows.
+</text>
+</article>
+
+
+
 
 
 </wiki>
