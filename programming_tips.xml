@@ -36,3 +36,4 @@
 		- se il dividendo è diverso da zero, il risultato è infinito (con il segno del dividendo);
 		- se anche il dividendo è zero, il risultato non è un numero e viene usata la codifica speciale NaN (Not a Number).</text>
 	</tip>
+</tips>
