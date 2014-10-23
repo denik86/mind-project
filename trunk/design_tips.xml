@@ -1,0 +1,24 @@
+<tips>
+	
+	<tip id="1" sw="photoshop">
+		<title>Creare motivi ricorrenti</title>
+		<tag>photoshop,motivo,texture</tag>
+		<text>Con photoshop possiamo creare texture che simulano materiali come legno o murature.
+		<head>Creare muro</head>
+		<list>
+		<li>Creiamo un nuovo documento di dimensioni 200 x 100 pixel mettendo come colore di sfondo un rosso mattone.</li>
+		<li>Andare su Filtro -> Texture -> Applica texture</li>
+		<li>Selezioniamo Mattoni e regoliamo il rilievo su 4 e Direzione luce su Basso sx. Diamo OK.</li>
+		</list>
+		Nota: alcune versioni di Photoshop possono non avere Mattoni nelle texture.
+		<head>Pannelli dui radica</head>
+		La stessa cosa di sopra ma mettere Effetto Incrinatura e poi andare su Filtro -> Distorsione -> Increspatura oceano e impostare Dimensione e Ampiezza a 9.
+		</text>
+	</tip>
+	
+	<tip id="2" sw="photoshop">
+	<title>Eliminare un elemento nella foto</title>
+	<tag>clone,toppa,photoshop,timbro</tag>
+	<text>
+	
+</tips>
