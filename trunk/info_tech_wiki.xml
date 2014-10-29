@@ -39,14 +39,11 @@ Esegue Windows come nella normale modalità provvisoria, con in più i servizi d
 Serve per inviare informazioni di debug ad un altro computer che può essere collegato tramite un cavo seriale. Tale modalità utilizza quindi la porta seriale COM.
 <h1>Avvia Windows Normalmente</h1>
 Avvio normale di Windows.
-
 <h1>Eventi</h1>
 Se non si sa quale errore ha provocato l'arresto o il riavvio del sistema andare su Pannello di controllo -> Amministrazione di Sistema -> Visualizzatore Eventi.
-In questo modo si potrà vedere, seppur con grande difficoltà, cosa può aver provocato l'errore.
-
-
-
-
+In questo modo si potrà vedere, seppur con grande difficoltà, cosa può aver provocato l'errore. 
+</text>
+</article>
 
 
 </wiki>
