@@ -1,0 +1,1 @@
+A database containing university courses and general culture concepts, written in xml format. This project also contains a multiple choice quizzes.
