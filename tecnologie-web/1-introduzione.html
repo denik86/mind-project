@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<title>Documento senza titolo</title>
+</head>
+
+<body>
+<h1>Introduzione</h1>
+<p>Sommario:</p>
+<ul>
+  <li>Il concetto di ipertesto, il Word Wide Web ed Internet</li>
+  <li>Il World Wide web Consortium (W3C)</li>
+  <li>Le architetture Client-Server e i protocolli di Internet</li>
+</ul>
+<h2>La storia in breve</h2>
+<ul>
+  <li>1969: il Dipartimento della difesa Americana crea il primo nodo di ARPAnet all’UCLA. Lo scopo iniziale era creare una connessione tra vari sistemi. Contemporaneamente nasce anche l'ipertesto, ma inizialmente solo per scopi militari.</li>
+  <li>Anni ‘70-’80: nascita di numerose piccole reti per il trasferimento di file e posta elettronica. Sono per lo piu’ reti “private” (università e aziende).</li>
+  <li>1986: viene creata NSFnet, una rete che collegava 5 università americane, che nel 1990 sostituisce ARPAnet per tutti gli usi non militari. Non c'è ancora il &quot;web&quot;, ma semplici sistemi di scambio messaggi.</li>
+  <li>1990: Tim Berners-Lee inventa il Web.</li>
+  <li>1992: NSFnet collega circa un milione di computer in tutto il mondo e viene definita la prima versione dello standard HTML.</li>
+  <li>1995: si inizia ad usare il nome Internet per la parte pubblica di NSFnet. Ci si rende conto che HTML contiene una capacità espressiva molto alta.</li>
+</ul>
+<p><a href="http://data.worldbank.org/indicator/IT.NET.USER.P2/countries?display=map">Internet penetration statistic now (per 100 people)</a></p>
+<h2>Internet</h2>
+<p><em>Internet</em> (INTERconnected NETworks, ovvero reti (di reti) interconnesse) è un insieme di reti eterogenee e connesse in maniera lasca (cioè una rete che può &quot;cadere&quot;). Garantisce, attraverso il protocollo TCP/IP, una comunicazione <em>affidabile</em> ma non efficiente, cioè un servizio <em>best effort</em>: non è in grado di garantire l'inoltro di un messaggio ed un tempo massimo di arrivo (il tempo di caricamento di una pagina web non dovrebbe essere superiore ai 400 ms).</p>
+<p>Un <em>ISP</em> (Internet Service Provider) è una struttura che fornisce il servizio di connessione agli utenti. I vari ISP sono a loro volta connessi ai fornitori di servizi di comunicazione di più alto livello.</p>
+<div class="caption">
+<img src="network_of_networks.jpg" />
+<span>Un esempio di una rete di reti</span>
+</div>
+<h2>Internet vs World Wide Web</h2>
+<p>E' importante ricordare che Internet e Web non sono la stessa cosa.</p>
+<ul>
+  <li>Internet è un'infrastruttura tecnologica che permette di far comunicare diversi computer (la rete fisica).</li>
+  <li>Il Web è l'insieme di software e protocolli installati sui diversi computer. In senso astratto è un insieme di documenti collegati tra loro.</li>
+</ul>
+<div class="caption">
+<img src="distributed_documents.jpg" alt="documenti distribuiti" />
+<span>Un esempio di rete di documenti distribuiti</span>
+</div>
+<h2>HyperText Transfer Protocol</h2>
+<p>Il protocollo HTTP nasce al Cern, a Ginevra, da Tim Berners-Lee nel Giugno del 1999. Venne usato inizialmente per diffondere documentazione di tipo scientifico, in ambito bibliotecario.</p>
+<p>L'HTTP stabilisce una connessione tra un client ed un server per lo scambio di documenti. Ogni documento è identificato univocamente da un URL (es. http://www.server.net/doc.html).</p>
+<p>I collegamenti (link) possono essere:</p>
+<ul>
+  <li>interni ai documenti</li>
+  <li>fra documenti dello stesso server</li>
+  <li>fra documenti di server diversi</li>
+</ul>
+<h3>Curiosità</h3>
+<p>Prima dell'uscita di Windows 95, un documento HTML doveva avere l'estensione .htm, perchè i sistemi DOS e Windows 3.1 non erano in grado di gestire estensioni con più di 3 caratteri. Con i nuovi sistemi, le estensioni potevano avere una lunghezza superiore e succesivamente l'estensione di un file HTML è cambiata a .html (come jpg -&gt; jpeg).</p>
+<h2>Comunicazione client / server</h2>
+<h3>Richiesta dal cliente Web</h3>
+<p>Quando l'utente seleziona un indirizzo URL e lo invia al server, si genera un messaggio di questo tipo: </p>
+<pre>GET //www.unipd.it/inf/index.html HTTP/1.1</pre>
+<p>Il metodo GET consente di ottenere il contenuto della risorsa indicata dall'URL. Quindi riceve un documento HTML e lo visualizza sullo schermo dell'utente intepretando i comandi di marcatura.</p>
+<p>Altri metodi sono:</p>
+<ul>
+  <li>POST: esegue il documento specificato</li>
+  <li>HEAD: restituisce l'informazione relativa all'intestazione</li>
+  <li>PUT: sostituisce il documenti specificato con i dati allegati</li>
+  <li>DELETE: elimina il documento specificato</li>
+</ul>
+<h3>Risposta dal server Web</h3>
+<p>Quando il server riceve una richiesta da un browser (in ogni istante ne può ricevere molte contemporaneamente), si genera un messaggio di questo tipo:</p>
+<pre>http/1.1   200   OK</pre>
+<p>Dove:</p>
+<ul>
+  <li>http/1.1 è la versione HTTP</li>
+  <li>200 è un codice di stato</li>
+  <li>OK è la spiegazione testuale</li>
+</ul>
+<p>Dall'URL il server individua il documento da restituire, lo legge dal disco e lo ritrasmette al cliente.</p>
+<p>La prima cifra del codice di stato può avere 5 valori:</p>
+<table width="223" border="1">
+  <tr>
+    <td width="69">Prima cifra</td>
+    <td width="138">Categoria</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Informativa</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Successo</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Preindirizzo</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Errore del client</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Errore del server</td>
+  </tr>
+</table>
+<p>La modalità appena descritta si applica in caso di pagine statiche, ma una pagina, o parte di essa, potrebbe essere dinamica: in questo caso il server crea &quot;al volo&quot; la pagina richiesta dall'utente sulla base dei dati forniti.</p>
+<h2>Il W3C</h2>
+<p>Il <em>World Web Consortium</em> (W3C) è un organismo indipendente che comprende le maggiori ditte produttrici di software per la rete, es. Google, Intel, AOL, Apple, Microsoft, Netscape, RealNetworks, molte università americane, ecc. Il sito web è: www.w3c.org.</p>
+<p>Si occupa di proporre standard a largo spettro che comprendono un gran numero di tecnologie ed iniziative che riguardano il Web (HTML, XHTML, CSS, WAI, ...). Le proposte (<em>Candidate Recommendation</em>) vengono messe a disposizione su Web per raccogliere il numero più alto possibile di contributi. Successivamente diventano standard (<em>Recommandation</em>).</p>
+<p>In genere il W3C mette a disposizione:</p>
+<ul>
+  <li>la definizione dello standard: <em>recommandation</em></li>
+  <li>una suite di test per l'implementazione: <em>test suite</em></li>
+  <li>un servizio di validazione</li>
+</ul>
+<p>tutto offerto in modo gratuito proprio per promulgare l'utilizzo e la diffusione dello standard in oggetto.</p>
+<h2>L'alba del Web Design</h2>
+<p>All'inizio i designer provenivano dall'editoria cartacea, dove l'output cartaceo fisso (il giornale) può essere pensato come un file pdf (con qualche distinguo).</p>
+<p>Nell'editoria su web entrano in gioco nuove variabili:</p>
+<ul>
+  <li>sistema operativo (tipi mime e font supportati, etc)
+  </li>
+  <li>caratteristiche del dispositivo (schermo, connessione, etc)</li>
+  <li>browser (standard supportati, bug)</li>
+</ul>
+<p>Far Web????</p>
+<h2>Dogmi del Design Tradizionale</h2>
+<p>Nel design tradizionale c'erano tre principali limitazioni:</p>
+<ul>
+  <li>inalterabilità del carattere tipografico</li>
+  <li>inalterabilità del colore</li>
+  <li>inalterabilità della composizione</li>
+</ul>
+<p>----vedere questo punto. non capito</p>
+<ul>
+  <li>variabilità del modello e della versione del browser</li>
+  <li>variabilità del dispositivo utilizzato</li>
+  <li>velocità di connessione</li>
+  <li>preferenze utente</li>
+</ul>
+<p>hanno portato (penso) a:</p>
+<ul>
+  <li>caratteri variabili</li>
+<li>colori variabili</li>
+  <li>composizione variabile</li>
+</ul>
+<p>Alcuni link di statistiche:</p>
+<ul>
+  <li>Piattaforme utilizzate: <a href="http://www.w3schools.com/browsers/browsers_os.asp">http://www.w3schools.com/browsers/browsers_os.asp</a></li>
+  <li>Browser utilizzati: <a href="http://www.w3schools.com/browsers/browsers_stats.asp">http://www.w3schools.com/browsers/browsers_stats.asp</a> </li>
+  <li>Risoluzioni e profondità colore utilizzate: <a href="http://www.w3schools.com/browsers/browsers_display.asp">http://www.w3schools.com/browsers/browsers_display.asp</a></li>
+</ul>
+<p>Soluzione migliore: non pretendere di avere l'assoluto controllo sull'output finale e gestire il bilanciamento tra accessibilità e design visuale accattivante.</p>
+</body>
+</html>
