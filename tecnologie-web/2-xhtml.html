@@ -3,22 +3,69 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="style.css" type="text/css" />
-<title>Documento senza titolo</title>
+<title>Il linguaggio XHTML e HTML 5 </title>
 </head>
 
 <body>
-<h1>Il linguaggio XHTML e HTML</h1>
+<h1>Il linguaggio XHTML e HTML 5</h1>
 <p>Sommario:</p>
 <ul>
   <li></li>
   <li></li>
 </ul>
 <h2>Un pò di storia</h2>
-<p>HTML (HyperText Markup Language) è un linguaggio per la  costruzione di ipertesti. È un linguaggio di markup: descrive  in modo molto preciso al browser come deve apparire la  pagina web.</p>
-<div class="box">
+<p>HTML (HyperText Markup Language) è un linguaggio per la costruzione di ipertesti. È un linguaggio di markup: descrive  in modo molto preciso al browser come deve apparire la pagina web.</p>
+<div class="box30">
 <h3>Cronologia di HTML</h3>
-<p>&nbsp;</p>
+<ul>
+  <li>1992: prima versione del linguaggio HTML (non c'è ancora una descrizione del comportamento).</li>
+  <li>1994: HTML 3.0 diventa uno standard.</li>
+  <li>Dicembre 1997: HTML diventa Recommendation HTML 4.01 del W3C.</li>
+  <li>1998: il W3C lancia il Web Standard Project (WaSP) per spingere Netscape Microsoft e le altre case produttrici di spingere Netscape, Microsoft e le altre case produttrici di browser a supportare pienamente gli standard.</li>
+  <li>Successivamente il WaSP si pone anche l’obiettivo di far produrre codice valido agli editor.</li>
+  <li>2000: IE5 per Macintosh supporta abbastanza bene gli standard XHTML, CSS e XML
+    <ul>
+      <li>document switch (tutti i browser leggono la prima stringa &lt;DOCUMENT TYPE ...&gt; e, se è scritta in maniera corretta, allora si comporta in modo rigido (strict). In questo modo le pagine scritte bene non hanno il problema del code forking.</li>
+      <li>Text zoom (ingrandire solo testo)</li>
+      </ul>
+  </li>
+  <li>2001: campagna aggiornamento browser. Obiettivo: eliminare i vecchi, tipo Netscape 4, IE 4, etc (http://www.alistapart.com/articles/tohell/).</li>
+  <li>Gennaio 2000: viene definito lo standard XHTML 1.0 (molto più rigido) successivamente revisionato nel 2002.</li>
+  <li>Luglio 2006: XHTML 2.0 Working draft, con una identificazione migliore degli elementi, ad esempio da &lt;a&gt; a &lt;link&gt; (non retrocompatibile).</li>
+  <li>Luglio 2008: diventa raccomandazione la versione XHTML Basic 1.1, una versione pensata per i dispositivi palmari e cellulari (semplicemente meno specificazioni di tag).</li>
+  </ul>
 </div>
-<p>cdinfoind</p>
+<p>L’elasticità e la semplicità di HTML ha favorito lo svilupparsi  di editor WYSIWYG. L'utilizzo di questi ultimi ha però portato a risultati graficamente molto accattivanti, ma di  bassa qualità (tecnica del &quot;costruisci adesso paga il prezzo  più tardi&quot;): si ottengono quindi pagine non accessibili, spreco di banda e il &quot;code forking&quot;, ovvero lo sviluppo di più versioni di pagine web per renderle interpretabili da più browser.</p>
+<h3>La guerra dei browser</h3>
+<p>HTML appartiene alla famiglia dei linguaggi SGML (un antenato di XML, ma non XML),  ma è molto più semplice. Appena introdotto era troppo povero, non permetteva  frame né immagini. Per accaparrarsi più utenti, i browser hanno cominciato ad  inserire nel linguaggio nuovi tag proprietari, estendendone le funzionalità, ad esempio:</p>
+<ul>
+  <li><em>img</em> (Netscape) vs <em>object</em> (MS Internet Explorer)</li>
+  <li><em>blink</em> (Netscape): testo lampeggiante</li>
+  <li><em>marquee</em> (Internet Explorer): testo scorrevole</li>
+</ul>
+<p>La guerra dei browser ha portato un arricchimento delle possibilità offerte ma anche grossi problemi di incompatibilità. HTML 4.01 non risolve del tutto il problema, perchè utilizza tag che definiscono anche la presentazione e il layout.</p>
+<p>XHTML 1.1 è essenzialmente una riformulazione della prima versione, in cui i tag e gli attributi vengono divisi in moduli per facilitarne l'uso.</p>
+<p>Uno dei problemi principali di HTML è, quindi, la sua crescita disordinata e l'incompatibilità con vari browser. Inoltre il contenuto e aspetto non vengono considerati separatamente.</p>
+<h3>HTML 5</h3>
+<p>HTML 5 viene creato nel 2004, in risposta a XHTML 2, che sembrava fare le stesse cose della versione precedente del linguaggio in modo diverso, mentre si voleva qualcosa di più orientato alle applicazioni web. Il gruppo attivo che si occupa dell'HTML 5, oltre all'evoluzione generale di HTML, si chiama <em>WHATWG</em> (Web Hypertext Application Technology Working Group), coordinato da Ian Hickson e fondato nel 2004 da Apple, Mozilla e Opera, e ai quali si è aggiunto anche Google. Nel 2007 il gruppo ha chiesto al W3C che HTML 5 (che include al suo interno web apps 1.0 e web forms 2.0) diventi il punto di partenza dell'evoulzione dell'html e che la nuova generazione di specifiche html sia ufficialmente chiamata, appunto, HTML 5.</p>
+<p>In risposta a tale richiesta il W3C crea il gruppo <em>W3C HTML 5 Working Group</em> che parte dalle specifiche prodotte dal WHATWG e abbandona l'XHTML 2.0.</p>
+<p><strong>&quot;In case of conflict, consider users over authors over implementors over specifiers over theoretical purity.&quot;</strong></p>
+<div class="caption"><img src="crono.jpg" />
+<span>Cronologia delle versioni HTML</span>
+</div>
+<div class="caption"><img src="browser_support.jpg" />
+<span>Supporto dei browser</span>
+</div>
+<h2>Problemi di HTML</h2>
+<p>Prima abbiamo accennato che HTML ha il problema che contenuto e aspetto non vengono considerati separatamente. Infatti si dovrebbero definire due elementi principali:</p>
+<ul>
+  <li>contenuto, definito da pagine XHTML</li>
+  <li>aspetto, definito dai fogli di stile CSS</li>
+</ul>
+<p>Ma il numero notevole di pagine web presenti oggi rende difficile qualunque modifica la linguaggio HTML che non sia retrocompatibile.</p>
+<div class="caption">
+<img src="website_elements.jpg" />
+<span>Elementi di un sito web: le tre componenti principali</span>
+</div>
 </body>
 </html>
