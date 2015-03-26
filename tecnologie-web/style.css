@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {margin: 0; padding: 0}
+body {font-family:Verdana, Geneva, sans-serif}
+
+.caption + h2 {clear: both} /* per impedire che h2 subisca il float da parte di un caption */
+
+.caption {
+	position: relative;
+	float:left;
+	margin-bottom:3em;
+}
+
+.caption img {
+	border: solid #888 1px;
+	display:block;
+}
+
+.caption span {
+	position:absolute;
+	width: 100%;
+	color: #EEE;
+	background-color:#888;
+	padding: 5px 0;
+	text-align:center;
+}
+
+.box {
+	float:right ;
+	border: solid #888 1px;
+	padding: 5px;
+	margin: 10px;
+	width:50%;
+}
+
+	
+
