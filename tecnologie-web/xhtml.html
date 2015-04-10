@@ -12,14 +12,13 @@
 <div id="container">
 <h1>XHTML</h1>
 <p>XHTML è l'evoluzione del linguaggio HTML, rilasciato dal W3C il 26 Gennaio 2000. In particolare XHTML 1.0 è la versione successiva di HTML 4.01, quindi lo standard corrente.</p>
-<p>La specifica di XHTML non introduce nuovi tag, ma viene definito una riformulazione di HTML  come applicazione XML, quindi diventa uno standard più coerente e aiuta lo sviluppo di codice valido: un documento XHTML deve essere valido e ben formato. Questo elimina parte dei problemi di presentazione di HTML e, essendo un linguaggio XML, è interoperabile. Non avendo tag nuovi ed avendo le regole di XML è chiaro che XHTML risponda a due esigenze fondamentali:</p>
+<p>La specifica di XHTML non introduce nuovi tag, ma viene definito una riformulazione di HTML  come applicazione XML, quindi diventa uno standard più coerente e aiuta lo sviluppo di codice valido, facendo tornare a definire solo la struttura di una pagina web: un documento XHTML deve essere valido e ben formato (se inseriamo &lt;font&gt;, larghezza delle celle, ecc, il documento non è valido). Questo elimina parte dei problemi di presentazione di HTML (che si fa con i CSS) e, essendo un linguaggio XML, è interoperabile. Non avendo tag nuovi ed avendo le regole di XML è chiaro che XHTML risponda a due esigenze fondamentali:</p>
 <ol>
   <li>portare HTML nella famiglia XML con i benefici che ciò comporta in termini di estensibilità e rigore sintattico</li>
   <li>mantenere la compatibilità con i software che supportano HTML 4.0</li>
 </ol>
 <p>XHTML elimina il problema del <em>code forking</em> perché supportato da diversi tipi di dispositivi (browser, browser per dispositivi mobili e screen reader) e un po anche dai vecchi browser.</p>
-<h2>Gli standard web (metterlo in introduzione tec web)</h2>
-<p>L'uso degli standard web porta i seguenti vantaggi:</p>
+<p>L'uso di XHTML, e più in generale, degli standard web, porta quindi i seguenti vantaggi:</p>
 <ul>
   <li>compatibilità con i browser</li>
   <li>compatibilità con le future tecnologie</li>
@@ -32,13 +31,19 @@
     web</li>
 </ul>
 <h2>Versioni di XHTML</h2>
-<p>Esistono attualmente tre versioni di XHTML:</p>
+<p>Esistono attualmente tre versioni disponibili e pubblicate di XHTML:</p>
+<h3>XHTML 1.0</h3>
+<p>Pubblicata il 26 Gennaio 2000. Consiste, come detto, nella riscrittura in XML di HTML 4.0 e si basa sulle tre DTD già definite per questo linguaggio:</p>
 <ul>
   <li><strong>XHTML Strict</strong>: è la forma più pura che aiuta a produrre codice in cui struttura e presentazione sono fortemente separati e rende più facile la modifica degli attributi di un elemento. Lo svantaggio è che non sempre è supportato bene dai vecchi browser. Non accetta i tag che sono stati definiti come deprecati in XHTML.</li>
   <li><strong>XHTML Transitional</strong>: è una forma transitoria creata per facilitare agli sviluppatori il passaggio ai nuovi standard. Accetta come validi anche i tag HTML che sono stati definiti come deprecati.</li>
   <li><strong>XHTML Frameset</strong>: nato per motivi di compatibilità per suddividere la finestra visualizzata dal browser in diversi frame, pratica ora deprecata dal W3C.</li>
-</ul>
-<h2>La sintassi XHTML</h2>
+  </ul>
+<h3>XHTML Basic</h3>
+<p>E' una versione ridotta del linguaggio, pensata specificatamente per dispositivi mobili: contiene solo gli elementi che si adattano a questi dispositivi (ad esempio esclude i tag frames).</p>
+<h3>XHTML 1.0</h3>
+<p>Basata sulla DTD Strict della versione 1.0, rappresenta la prima formulazione pratica del concetto di modularità. In questa versione, gli elementi fondamentali (i tag) sono raggruppati in una serie di moduli indipendenti. Secondo il W3C è la base della futura estensione di XHTML con altri set di linguaggi o moduli.</p>
+<h2>Le regole di sintassi XHTML</h2>
 <p>XHTML è un linguaggio XML quindi:</p>
 <ul>
   <li>i tag e gli attributi sono case sensitive (tutto in minuscolo)</li>
@@ -52,7 +57,7 @@
   <li>un elemento in linea non può contenere un elemento di blocco</li>
 </ul>
 <p>I browser cercano di visualizzare al meglio codice non valido, ma questo può portare ad interpretazioni arbitrarie.</p>
-<h2>Elementi che vengono ignorati</h2>
+<h3>Elementi che vengono ignorati</h3>
 <p>I browser ignorano completamente:</p>
 <ul>
   <li>le interruzioni di linea non identificate con &lt;br/&gt; e non contenute in un tag &lt;pre&gt;</li>
@@ -61,8 +66,48 @@
   <li>tag sconosciuti</li>
   <li>commenti (ATTENZIONE: all'interno di un commento non è possibile inserire la stringa '--' (doppi trattini))</li>
   </ul>
-<p>&nbsp;</p>
+<h2>Struttura di base di un documento XHTML</h2>
+<p>Ecco come si presenta il codice di una semplice pagina XHTML basata sulla DTD Strict</p>
+<div class="boxcode">
+<span>Listato 1. Esempio di codice XHTML Strict</span>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang=&quot;it&quot; lang=&quot;it&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;La mia prima pagina XHTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Benvenuto!&lt;/h1&gt;
+    &lt;p&gt;Questo è il mondo di XHMTL!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
 </div>
+<p>Per poter verificare che questa pagina è valida e ben formata, è opportuno imparare a fare la convalida: Si va all'url http://validator.w3.org copiando il codice, caricando la pagina html oppure inserendo l'url della pagina e cliccare su &quot;Validate this page&quot;. Se il documento è valido si riceverà una risposta di questo tipo: &quot;<em>Congratulations, this document validates as XHTML 1.0 Strict!</em>&quot;.</p>
+<p>Analizziamo ora, una per una, le quattro sezioni essenziali del documento:</p>
+<h3>Il prologo XML</h3>
+<div class="boxcode">
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre>
+</div>
+<p>La nostra pagina inizia con una rida di codice <span class="code"> &lt;?xml version=&quot;1.0&quot;?&gt; </span>. La sua funzione è rendere esplicito il fatto che il documento è XML. Non è obbligatoria ma il suo uso è raccomandato dal W3C, per specificare:</p>
+<ul>
+  <li>la  versione xml (version) obbligatoria</li>
+  <li>il tipo di codifica dei caratteri (encoding) opzionale</li>
+  <li>specificare che il documento non fa riferimento ad entità esterne (standalone=&quot;yes&quot;) opzionale </li>
+  </ul>
+<p>Purtroppo però molti browser non lo gestiscono correttamente, causando visualizzazioni scorrette o crash.</p>
+<h3>Dichiarazione di tipo documento</h3>
+<div class="boxcode">
+<pre>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre>
+<p>La dichiarazione del DOCTYPE (obbligatoria per il validatore), solitamente viene generata in modo automatico dall'editor HTML specifico. Ha il compito di informare il browser che si tratta di un documento html relativo alle specifiche e a quale delle tre DTD si conforma (in questo caso <em>XHTML 1.0 Strict</em>) e qual'è la lingua primaria.</p>
+<p> Se non si specifica un doctype valido, i browser passano in modalità "<em>quirks mode</em>", ovvero una tecnica che consente ai browser di essere retrocompatibili con le pagine web che non sono conformi allo standard.
 </div>
 </body>
 </html>

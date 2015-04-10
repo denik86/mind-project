@@ -5,11 +5,12 @@ html {margin: 0; padding: 0}
 body {font-family:Verdana, Geneva, sans-serif}
 
 div#container{
-    width: 60em;   /*dimensionamento in em del container principale */
+    max-width: 60em;   /*dimensionamento in em del container principale */
     margin: 0px auto;   /*centra negli altri browsers*/
     text-align: left;   /*ripristina l’ allineamento*/
 	border: solid #000000 1px;
 	padding: 5px;
+
     }
 
 .caption + h2 {clear: both} /* per impedire che h2 subisca il float da parte di un caption */
@@ -41,6 +42,28 @@ div#container{
 	padding: 5px;
 	margin: 10px;
 	width: 40%;
+}
+
+.boxcode {
+}
+
+.boxcode pre {
+	border: solid 1px #999;
+	padding: 5px;
+	background-color:#EEE;
+	word-wrap: break-word;
+}
+
+.boxcode span {
+	font-size:0.9em;
+	color:#03C;
+}
+
+.code {
+	border: solid 1px #999;
+	background-color:#EEE;
+	word-wrap: break-word;
+	font-family: monospace;
 }
 
 	
