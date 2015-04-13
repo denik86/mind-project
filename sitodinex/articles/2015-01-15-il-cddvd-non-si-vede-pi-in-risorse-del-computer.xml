@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="2015-01-15-il-cddvd-non-si-vede-pi-in-risorse-del-computer">
+  <section>Soluzioni</section>
+  <subsection></subsection>
+  <title>Il CD/DVD non si vede più in Risorse del Computer</title>
+  <image>cd_dvd_ask.jpg</image>
+  <author/>
+  <email/>
+  <date>15-01-2015</date>
+  <keywords>cd,dvd,risorse</keywords>
+  <abstract>In molti casi il CD/DVD che inseriamo potrebbe non essere visto in Risorse del Computer per vari motivi. Ecco le soluzioni al problema</abstract>
+  <body><![CDATA[<p>Può succedere che in particolari casi l'unità CD/DVD del nostro PC non si visualizzi più nella famosa finestra delle Risorse del Computer, impossibilitando chiunque di leggere o scrivere del contenuto in qualche CD o DVD inserito.</p>
+
+<p>Le cause di questo problema possono essere molte, e possono essere suddivise in due categorie: hardware e software.</p>
+
+<h3>Soluzione 1</h3>
+<p><strong>Per Windows XP</strong>: Andate su <code>Pannello di Controllo/Sistema/Hardware/Gestione Periferiche</code>.</p>
+<p><strong>Per Windows Vista/7</strong>: Andate su <code>Pannello di Controllo/Sistema/Gestione Dispositivi.</code></p>
+<p>Poi cliccate con il tasto destro la voce relativa all'unità CD/DVD e selezionate <code>Elimina/Disinstalla</code>. Riavviate il PC e controllate che l'unità sia stata rilevata. In caso contrario tornate in Gestione Periferiche e selezionate dal menu <code>Azione/Rileva modifiche hardware</code>.</p>
+<div class="boximg">
+<p>Finestra di Gestione Dispositivi su Win 7</p>
+<img src="articles/images/00016gest.jpg" />
+</div>
+
+<h3>Soluzione 2</h3>
+<p>Andate sul registro di sistema (Da <code>Start/Esegui</code> e poi digita <code>"regedit"</code>, oppure da <code>Start/Tutti i Programmi/Accessori/Esegui (o Run) </code>.</p>
+<p>Cercate la chiave <code> HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E965-E325-11CE-BFC1-08002BE10318}</code>.</p> 
+<p>Una volta trovata evidenziatela e noterete delle voci a destra: eliminate le voci (se sono presenti) <code>Upperfilters</code> e <code>Lowerfilters</code>.</p>
+<div class="boximg">
+<p>Finestra del Registro di Sistema</p>
+<img src="articles/images/00016reg.jpg">
+</div>
+
+<h3>Soluzione 3</h3>
+<p>L'ultima soluzione è aprire il case e vedere se tutto è connesso correttamente. Controllate che tutti i cavi siano perfettamente collegati all'unità. Se è tutto a posto e il problema si ripresenta, allora significa che il lettore è danneggiato internamente e l'unica possibilità è farlo riparare in un centro assistenza. </p>
+]]></body>
+</article>

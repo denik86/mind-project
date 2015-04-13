@@ -1,0 +1,57 @@
+abrupt - brusco, improvviso
+achieve - realizzare, ottenere
+address - indirizzo, discorso, indirizzare, rivolgersi, dedicarsi
+advisory - consultivo
+ahead - avanti, davanti
+awareness - consapevolezza
+depicts - rappresentare, figurare
+either - entrambi, l'uno o l'altro
+even - anche, fino, uniformare, livellare, costante, uguale
+foresight - previsione, prudenza
+highway - autostrada
+headway - progresso
+heavy - pesante, forte
+jams - blocca, schiaccia, inceppa
+lanes - corsie
+lead - portare, condurre
+luxury - lusso
+maneuvers - manovre
+motorists - automobilisti
+novel - nuovo
+oncoming - imminente
+overall - generale,complessivo,in tutto
+overcome - superare
+peaks - picchi,culmine
+phantom jams - fantasma inceppo ????
+pick - scegliere, cercare, raccogliere
+properly - opportunamente, propriamente, bene
+proven - provato
+reached - raggiunto
+rising - rescente, rivolta, ascesa, crescita
+seems - sembra
+since - dopo, dato che, siccome, da allora
+slowdowns - rallentamento
+therewith - con ciò
+vastly - di gran lunga
+Account = relazione, conto, considerare
+Allow = permettere
+anyone = nessuno, chiunque
+anything = niente, affatto, alunch?, nulla, qualcosa,
+anything else = nient'altro, qualcos'altro
+Another = un altro
+Bear = Portare, sopportare, produrre, generare
+Bearing = portamento, condotta
+each = ogni
+Hate = odiare
+if anything = se mai
+like anything = moltissimo
+marks = classifica, marche, orme, punti, segni
+maybe = forse, chiss?, probabilmente, puo essere, pu? darsi
+morgue = obitorio, archivio
+near = vicino, avvicinarsi, circa
+nervous = nervoso, agitato, forte, irritabile, robusto, teso
+obtained = ottenuto, raggiunto
+Readily = volentieri
+shards = shcegge, frammenti
+such = tale
+Useful = utile

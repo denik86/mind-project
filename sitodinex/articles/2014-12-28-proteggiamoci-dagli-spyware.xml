@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article id="2014-12-28-proteggiamoci-dagli-spyware">
+<section>Sicurezza</section>
+<subsection></subsection>
+<title>Proteggiamoci dagli spyware</title>
+<image>security.jpg</image>
+<abstract>Rubano i nostri dati personali, spiano le nostre attività, mettono a rischio le nostre carte di credito. Come possiamo difenderci dagli spyware?</abstract>
+<author>Denik</author>
+<email></email>
+<date>2014-12-28</date>
+<update>2014-12-28</update>
+<keyword></keyword>
+<body>
+<![CDATA[
+<p>Uno spyware è un programma in grado di tenere traccia delle attività online di un utente. Questo avviene senza il consenso della persona che viene spiata e i dati acquisiti vengono trasmessi in rete alle organizzazioni o persone che ne traggono profitto. A differenza dai virus e worm, gli spyware non sono in grando di autoreplicarsi e diffondersi in modo autonomo e devono chiedere l'utente di essere installati (ovviamente sotto falso nome).
+</p>
+
+<h3>Dove attaccano</h3>
+<p>Le zone di attacco degli spyware sono principalmente le pagine web, attraverso cui si intrufolano e memorizzano ogni nostra azione. Anche i cookies a volte possono essere pensate come particolari spyware, ma con rischi per l'utente molto più ridotti e limitati solo al sito web che li usa. \a
+Gli spyware possono nascondersi anche all'interno di programmi offerti nella rete. Molti sono i software che ogni giorno approdano su Internet e che garantiscono fantastiche funzioni gratuitamente; molte sono però le truffe: in realtà, installando uno di questi software, potremmo incorrere in spiacevoli sorprese, trovandoci l'installazione di uno spyware senza nemmeno accorgercene.
+</p>
+
+<h3>Il loro scopo</h3>
+<p>Molte organizzazioni criminali si avvalgono di questi strumenti illegali per trarne informazioni sensibili. Queste informazioni possono essere indirizzi e mail, password, numeri di carte di credito, dati di home banking. Tutto questo mette a repentaglio la privacy dell'utente e il suo patrimonio.
+</p>
+
+<h3>La difesa</h3>
+<p>Molti software sono in grado di eliminare questa minaccia. Uno dei più conosciuti e gratuito è l- http://www.safer-networking.org/it/index.html -- Spybot Search&amp;Destroy -l ( che garantisce un'ottima protezione della nostra privacy. Una volta installato e aggiornato, viene lanciata la scansione e il disco rigido viene analizzato per individuare e raggruppate tutte le minacce.
+</p>
+
+<p>E' da riferire che Spybot può rilevare anche individuare delle "false" minacce, come delle voci nel registro di sistema che indicano alcune vulnerabilità del sistema operativo.
+</p>
+
+<h3>Come procedere</h3>
+<p>Ma come eseguire una scansione completa nel nostro pc? \a\a
+1. Dopo aver installato e avviato Spybot, aggiorniamo l'archivio delle minacce. Quindi clicchiamo su "Cerca Aggiornamenti" (il computer deve essere collegato ad Internet). Vedremo apparire una lista di aggiornamenti; clicchiamoli tutti e poi selezioniamo "Scarica Aggiornamenti". \a\a
+2. Al termine, selezioniamo la voce "Search &amp; Destroy" e "Avvia Scansione" per eseguire il controllo del disco. Il tempo di scansione dipende dalla capienza del disco rigido e dalla velocità del processore. \a\a
+3. Una volta terminata la scansione, verrà visualizzata una lista delle minacce rilevate (evidenziate in rosso). Selezioniamo "Correggi problemi selezionati" per eliminarle tutte. </p>
+<div class="boximg"><p>Interfaccia classica del programma Spybot Search&Destroy</p><img src="articles/images/2014-12-28-spybot.jpg" /></div>
+
+<h3>Altri alleati</h3>
+<p>Altro strumento di difesa oltre a quello citato è l-http://www.lavasoft.com--Ad-Aware Personal SE-l. Anche questo è gratuito e si aggiorna online. Il vantaggio nell'uso di questo programma sta nella possibilità di mettere in quarantena gli elementi rilevati come minacce prima di eliminarli, in modo tale da ripristinarli se qualcosa non dovrebbe funzionare correttamente dopo la pulizia.
+</p>
+
+]]>
+</body>
+
+</article>
+   

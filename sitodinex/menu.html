@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Popolare SELECT da SELECT</title>
+		<script type="text/javascript">
+			//Dichiaro l'array myMenu'
+			var myMenu = new Array();
+			
+			//Definisco le voci del menu'
+			myMenu['cat_a'] = new Array(); //Prima categoria
+			myMenu['cat_a']['value1'] = 'Prima opzione';
+			myMenu['cat_a']['value2'] = 'Seconda opzione';
+			myMenu['cat_a']['value3'] = 'Terza opzione';
+			myMenu['cat_b'] = new Array(); //Seconda categoria
+			myMenu['cat_b']['value4'] = 'Quarta opzione';
+			myMenu['cat_b']['value5'] = 'Quinta opzione';
+			myMenu['cat_b']['value6'] = 'Sesta opzione';
+			myMenu['cat_c'] = new Array(); //Seconda categoria
+			myMenu['cat_c']['value7'] = 'Settima opzione';
+			myMenu['cat_c']['value8'] = 'Ottava opzione';
+			myMenu['cat_c']['value9'] = 'Nona opzione';
+			
+			function popola_select(){
+				var select = document.forms['myForm'].mySelect; //Recupero la SELECT
+				var subselect = document.forms['myForm'].mySubSelect; //Recupero la seconda SELECT
+				
+				// Recupero la categoria selezionata
+				var cat = select.options[select.selectedIndex].value;
+				
+				//Controllo che sia stata selezionata una categoria valida
+				if(cat.length != 0){
+					//Azzero il contenuto della seconda select
+					for (var i = subselect.length - 1; i >= 0; i--)
+						subselect.remove(i);
+					
+					//Popolo la seconda Select
+					for(value in myMenu[cat]){
+						//Creo il nuovo elemento OPTION da aggiungere nella seconda SELECT
+						var NewOpt = document.createElement('option');
+						NewOpt.value = value; // Imposto il valore
+						NewOpt.text = myMenu[cat][value]; // Imposto il testo
+						
+						//Aggiungo l'elemento option
+						try{
+							subselect.add(NewOpt, null); //Metodo Standard, non funziona con IE
+						}catch(e){
+							subselect.add(NewOpt); // Funziona solo con IE
+						}
+					}
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myForm" method="post" action="...">
+			<select name="mySelect" onChange="popola_select()">
+				<option value="">-> Seleziona una Categoria</option>
+				<option value="cat_a">Prima Categoria</option>
+				<option value="cat_b">Seconda Catgoria</option>
+				<option value="cat_c">Terza Categoria</option>
+			</select>
+			<br />
+			<br />
+			<select name="mySubSelect"></select>
+		</form>
+	</body>
+</html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento senza titolo</title>
+</head>
+
+<body>
+</body>
+</html>

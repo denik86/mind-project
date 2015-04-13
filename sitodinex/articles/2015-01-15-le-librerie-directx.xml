@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="2015-01-15-le-librerie-directx">
+  <section>Grafica</section>
+  <subsection>subsection</subsection>
+  <title>Le librerie DirectX</title>
+  <image>directx.jpg</image>
+  <author/>
+  <email/>
+  <date>15-01-2015</date>
+  <keywords/>
+  <abstract>Senza di esse non esiste il gioco 3D. Cosa sono? E qual'è la versione giusta da installare?</abstract>
+  <body><![CDATA[<p>Perché quando installo un gioco mi viene chiesta l'installazione di questa DirectX?</p>
+<p>E' probabile che molti se lo chiedano, soprattutto a chi di videogames non può farne a meno (ma forse chi gioca molto saprà sicuramente cosa sono). All'interno di quasi tutti i videogiochi per pc è presente l'installazione di una versione delle DirectX che permettono di far funzionare il gioco correttamente.</p>
+
+<h3>Ma cos'è una DirectX?</h3>
+<p>Queste librerie sono un insieme di <strong>API</strong> (Application Programming Interface) creati da Microsoft, che permettono ai programmi di comunicare ed accedere a funzionalità  avanzate dei componenti hardware, principalmente le schede video e audio.</p>
+<p>Servono agli sviluppatori di videogiochi, che <strong>non sono più vincolati</strong> dal tipo di hardware posseduto dai singoli computer, in quanto sono queste librerie a fare da tramite tra il programma e il componente hardware installato nei singoli computer (sarebbe impossibile sviluppare un programma sulle specifiche di ogni componente presente sul mercato).</p>
+<p>Vengono forniti quindi degli <strong>strumenti standard</strong> per lo sviluppo degli applicativi software e per l'accesso ai driver delle schede video e audio.</p>
+
+<h3>Grafica 3D</h3>
+<p>Grazie alle DirectX è possibile sfruttare la <strong>grafica tridimensionale</strong> e gli effetti audio che fino a qualche anno fa erano solo un sogno. Ovviamente la potenza grafica dipende molto dalla potenza dell'hardware che si possiede, ma negli ultimi anni questa tecnologia ha fatto passi da gigante.</p>
+
+<h3>Gli strumenti delle DirectX</h3>
+<p>In realtà le DirectX sono composte da pi&ugrave programmi:<br>
+- <strong>Direct Draw</strong>: sfruttano l'accelerazione grafica bidimensionale (2D) delle schede video. Dalla versione 8.0 non esiste pi&ugrave, in quanto viene inglobata nelle Direct3D.<br>
+- <strong>Drirect 3D</strong>: sfruttano l'accelerazione grafica tridimensionale (3D), facendo svolgere il lavoro di rendering alla scheda video, rendendo più leggero il lavoro alla CPU.<br>
+- <strong>Direct Sound</strong>: gestiscono le funzioni audio, mixaggio ed effetti sonori. Comunicano con la scheda audio.<br>
+- <strong>Direct Music</strong>: festiscono la riproduzione di musica convertendo e riproducendo i dati musicali attraverso la scheda audio o il sintetizzatore software incorporato.<br>
+- <strong>Direct Input</strong>: forniscono un'interfaccia per gli input come il mouse, tastiera, joypad e altre periferiche.<br>
+- <strong>Direct Play</strong>: gestiscono le connessioni in rete tra i vari computer.<br>
+- <strong>Direct Show</strong>: sono API che gestiscono la riproduzione di file multimediali (MPEG, AVI, MP3, ...) e streaming via Internet.<br>
+- <strong>Direct Setup</strong>: permettono all'utente di sapere le DirectX installate e consentono di aggiornare i componenti.</p>
+
+<h3>Il viaggio delle DirectX</h3>
+<p>Le prime versioni <strong>DirectX 1.0 e 2.0</strong> (1995 - 1996) nacquero con numerosi problemi.
+All'arrivo della <strong>DirectX 3.0</strong> (1996) venne introdoto lo strumento Direct3D, anch'esso non esente da problemi. Con il rilascio delle versioni 3.0 a/b alcuni errori vennero corretti.</p>
+<p>Dopo la versione 4.0, che non fu mai rilasciata ufficialmente, arriv&ograve la <b>DirectX 5.0</b> (1997), rivista e ampliata fino alla 5.2.</p>
+<p>Con le <b>DirectX 6.0</b> (1998) si introdussero le DirectShow, oltre ad uno sviluppo ulteriore della grafica.</p>
+<p>Dall'avvento delle <b>DirectX 7.0</b> (1999) venne sviluppata la grafica 3D, che da questa versione ha una maggior programmabilit&agrave  e consente di sgravare la CPU dal peso dell'elaborazione grafica, spostandolo sulla GPU della scheda video.</p>
+<p>La svolta decisiva arriv&ograve dalle <b>DirectX 8.0</b> (2000), che abbandonarono la tecnologia 9x a favore della NT (venne introdotto sul mercato Windows XP). Il passo decisivo fu portato dall'affermazione dello standard DirectX nel mondo 3D, integrando inoltre il modulo Direct Draw, ormai superfluo vista la quasi assenza di giochi 2D, all'interno delle Direct 3D.</p>
+<p>Anche sulle Direct Music e Direct Sound vennero introdotte alcune novit&agrave  come l'integrazione delle prime nelle Direct Sound e la possibilit&agrave , nelle seconde, di riprodurre file multimediali come MP3, AVI e MPEG. Altra novit&agrave  riguardano le Direct Play, che introdussero il supporto per utilizzare le funzionalit&agrave  multiplayer dei videogiochi.</p>
+<p>Le <b>DirectX 9.0</b> (2002) portarono un livello di realismo nella grafica 3D impressionante, oltre che a garantire una maggiore programmabilit&agrave .</p>
+<p>Le <b>DirectX 10.0</b> (2006) misero a disposizione delle DLL pi&ugrave veloci e un livello di rendering delle scene molto pi&ugrave alto.</p>
+<p>Oggi, l'ultima versione rilasciata, la DirectX 11 (2009), offre numerosi miglioramenti, come l'efficienza e l'ottimizzazione della dei moderni processori multicore. Si ottengono quindi animazioni 3D pi&ugrave fluide e grafica di gioco pi&ugrave realistica.</p>
+
+<h3>Impostiamo e aggiorniamo</h3>
+<p>Per accedere alle DirectX installate nel nostro PC andiamo su <code>Start</code> e scegliamo <code>Esegui / Run</code>. Digitiamo <code>dxdiag</code> premendo poi OK. Verr&agrave  avviato il programma di diagnostica delle DirectX, che presenta diverse schede relative alla versione installata, alla sezione video, audio, input, e alla rete. <br>
+Bisogna ricordarsi di aggiornare sempre le directX qualora presentino dei problemi. L'aggiornamento si pu&ograve scaricare dal sito <a href="www.microsoft.com/windows/directx/download">www.microsoft.com/windows/directx/download</a>.
+Attenzione che per chi possiede versioni "vecchie" di Windows, come Windows 95, l'aggiornamento &egrave possibile fino alla versione 8.0 a.</p>
+<div>
+<div class=boximg><p>Schermata di diagnostica DirectX in Windows 7</p>
+<img src="articles/images/00019a.jpg">
+</div> ]]></body>
+</article>

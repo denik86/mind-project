@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article id="2014-12-26-il-bios">
+<section>Hardware</section>
+<subsection></subsection>
+<title>Il BIOS</title>
+<image>cpu_bios.jpg</image>
+<abstract>Il BIOS è uno dei componenti più importanti per il funzionamento del computer. Quali sono le sue funzioni? Quali sono i rischi in caso di errore?</abstract>
+<author>Denik</author>
+<email></email>
+<date>2014-12-26</date>
+<update>2014-12-26</update>
+<keyword></keyword>
+<body>
+<![CDATA[
+<p>Quando accendiamo il nostro PC, viene eseguita una serie di test per verificare il corretto funzionamento dei componenti del sistema: periferiche hardware, periferiche integrate, scheda madre, sistema operativo e programmi. Tutti questi controlli servono per assicurare una corretta esecuzione del sistema operativo e quindi della macchina stessa. \a
+La componente software che esegue questi controlli speciali si chiama  "BIOS". Il BIOS (Basic Input-Output System) è composto da un insieme di routine di controllo che vengono scritte al momento della costruzione della scheda madre su un'apposita memoria ROM (o FLASH). Queste istruzioni sono molto importanti perchè permettono al sistema operativo di riconoscere tutte le periferiche installate e quindi di comunicare con esse.
+</p>
+
+<h3>No BIOS, no avvio</h3>
+<p>Il BIOS è scritto in linquaggio assembly (il linguaggio nativo delle CPU) e recentemente è scritto su memorie EEPROM, che sono memorie riscrivibili e permettono quindi un aggiornamento del contenuto. Ovviamente l'aggiornamento del BIOS è un'operazione molto delicata e, se qualcosa non funzionasse, manderebbe in malora la scheda madre e, quindi, tutto il computer. \a
+Anche alcuni virus sono in grado di sovrascrivere il BIOS per danneggiarlo, ma alcuni sistemi prevedono un opzione per disabilitare le funzioni di scrittura.
+</p>
+
+<h3>Boot</h3>
+<p>Il BIOS è in grado di caricare un sistema operativo da diversi dispositivi: dischi fissi, floppy, CD-ROM, memorie USB e, spesso, anche dalla rete, utilizzando un protocollo (chiamato Preboot Execution Environment, PXE) in grado di eseguire il boot di un computer attraverso la rete ethernet, senza bisogno di una memoria di massa.
+</p>
+]]>
+</body>
+
+</article>
+   

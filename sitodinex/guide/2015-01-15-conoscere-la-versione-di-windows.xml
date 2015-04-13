@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="2015-01-15-conoscere-la-versione-di-windows">
+  <section>Windows</section>
+  <subsection>subsection</subsection>
+  <title>Conoscere la versione di Windows</title>
+  <image>microsoft4color.jpg</image>
+  <author/>
+  <email/>
+  <date>15-01-2015</date>
+  <keywords/>
+  <abstract>Come informarsi sulla nostra versione di Windows e visualizzarla sul desktop</abstract>
+  <body><![CDATA[<p>Una delle curiosità informatiche è scoprire la propria versione di Windows installata nel sistema. La conoscenza di questa informazione può essere utile anche a chi si imbatte in patch, aggiornamenti, e Service Pack di Microsoft.
+Per questo, esiste, in una precisa locazione nel registro di sistema, una voce contenente la versione esatta del nostro sistema operativo, che vi permette di visualizzare la vostra versione di Windows direttamente sulla schermata del desktop.
+La procedura è molto semplice ed è uguale per tutte le versioni di Windows, da XP a 7.</p>
+<h3>Troviamo la chiave </h3>
+<p>I passi di seguire sono seguenti:<br>
+<ul>
+<li> Aprite il registro di sistema scrivendo il comando <code>regedit</code> nella casella del programma <b> Esegui </b> (Potete trovarlo andando su <code>Start\Esegui</code> oppure su <code>Accessori\Esegui (o Run)</code>.</li>
+<li> Seguite il percorso <code>HKEY_CURRENT_USER\Control Panel\Desktop</code>.</li>
+<li> Cercate la voce <code>PaintDesktopVersion</code>, apritela e modificate il valore DWORD a 1.</li>
+<li> Cliccate OK, uscite, riavviate il PC e potrete vedere sulla schermata desktop, in basso a destra, la vostra versione di Windows.</li>
+</ul></p>]]></body>
+</article>

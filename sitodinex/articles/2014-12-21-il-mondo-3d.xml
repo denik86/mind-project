@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article id="2014122101">
+<section>Grafica</section>
+<subsection></subsection>
+<title>Il mondo 3D</title>
+<image>bowl_3d.jpg</image>
+<author>Denik</author>
+<email></email>
+<date>2014-12-21</date>
+<update>2014-12-21</update>
+<keyword></keyword>
+<abstract>La grafica tridimensionale ha ormai spaziato in tutti i campi: videogiochi, siti web, effetti speciali. Scopriamo insieme gli strumenti e le tecniche che danno vita a questo spettacolare mondo</abstract>
+<body> <![CDATA[
+<p>
+Quando andiamo al cinema a vederci un bel film di fantascienza, quando ci godiamo il nostro videogioco preferito, quando guardiamo la pubblicità o un semplice opuscolo, non ci rendiamo conto di quanto lavoro sta dietro a tutto quello che noi semplicemente "vediamo".
+Si parla ovviamente della grafica computerizzata, che al giorno d'oggi è presente in quasi tutti i campi. Architettura, animazioni, videogiochi, arredamento, cinema, fisica, biologia e tanti altri ancora.
+La grafica 3D poi viene a sorprenderci sempre più, quando guardiamo film con effetti spettacolari, dove quasi non distinguiamo quello che è reale da quello che è virtuale.
+Ma cos'è la grafica 3D? Quali sono i misteri che avvolgono questo affascinante mondo?
+</p>
+
+<h3>La 3Definizione</h3>
+<p>La grafica tridimensionale ci consente di creare ambienti e oggetti tridimensionali, consentendoci di visualizzarli dall'angolazione che vogliamo.
+Esistono attualmente molti software in grado di creare modelli 3D, gratuiti e non, ma tutti utilizzano algoritmi matematici per descrivere gli oggetti, muoverli, ruotarli, deformarli.
+L'uso dei modelli matematici è molto vantaggioso, poichè rende i file di progetto molto meno pesanti e consente una veloce esecuzione delle operazioni sugli oggetti.
+</p>
+
+<h3>Si inizia sempre dal cubo</h3>
+<p>Ogni lavoro di modellazione 3D nasce dalla creazione di semplici primitive geometriche. Possiamo creare un vaso partendo, per esempio, da un cilindro. Possiamo modellare un viso umano partendo da una sfera, per poi deformarla passo passo. E' facile intuire quindi che ogni oggetto più o meno complesso nasce da trasformazioni successive di cubi, sfere, curve ed altre primitive che sono la base di tutti i progetti 3D.
+</p>
+
+<h3>Le luci e le texture</h3>
+<p>Per dare più realismo alle scene da noi create è indispensabile disporre di una buona dose di luci nell'ambiente virtuale, nonchè di accurate texture.\a
+Le luci, come sappiamo, illuminano la scena, come nel set di un film, creando ombre e accentuando così l'effetto di profondità. Programmi più specifici consentono inoltre di aggiungere effetti luminosi come aloni, bagliori e flash che rendono più realistica la scena.\a
+Le texture sono delle immagini, chiamate pattern grafici, che simulano materiali di ogni genere e vengono applicati sui modelli 3D per renderli realistici. Solitamente i formati immagine di questi pattern sono .png, .bmp, .jpg ma è essenziale che le loro dimensioni siano in accordo con quelle degli oggetti alle quali vengono applicati.
+</p>
+
+<h3>Il movimento</h3>
+<p>Dopo aver acquisito una certa perizia sulla modellazione 3D, possiamo estendere gli orizzonti creando delle animazioni. E' richiesta quindi l'introduzione di un nuovo fattore: il tempo.\a
+In quasi tutti i software di modellazione 3D è presente una timeline che rappresenta la linea temporale della scena. Possiamo quindi memorizzare la posizione A di un oggetto in un determinato momento t1 e posizionarlo poi in un punto diverso B in un momento diverso t2, creando in questo modo il movimento da A a B.
+E' possibile fare veramente di tutto: spostamenti di oggetti, creazione di effetti di fumo, fuoco, acqua, esplosioni, etc.
+</p>
+
+<h3>Renderizziamo</h3>
+<p>Il rendering è quel processo che crea il prodotto finale. Quindi crea la scena (immagine o animazione) con tutti gli oggetti, le luci, le ombre e le texture.\a
+Prima di renderizzare tutto, dobbiamo impostare alcuni parametri fondamentali di esportazione: il tipo di file che si vuole ottenere, le dimensioni del fotogramma, la qualità, il numero di fotogrammi al secondo (per le animazioni) e tante altre opzioni.
+</para>
+
+<para order="7"><title>Quanti programmi</title>
+La scelta del nostro software di modellazione 3D dipenderà dai nostri interessi e ovviamente dal nostro budget.\a
+Esistono programmi che sono specifici per la progettazione, l'arredamento, la modellazione, gli effetti cinematografici, le figure umane. Altra suddivisione riguarda l'ambito economico: esistono programmi freeware o commerciali.
+</p>
+
+<p>
+Qui sotto verrà presentata una lista dei principali software che sono attualmente disponibili in commercio.\a\a
+
+- 3D Studio Max (Commerciale) l-www.autodesk.it/3D-Max--www.autodesk.it/3D-Max-l \a
+- Maya (Commerciale) l-http://usa.autodesk.com/maya/--usa.autodesk.com/maya/-l \a
+- Autocad (Commerciale, disegno tecnico) l-http://usa.autodesk.com/autocad/--usa.autodesk.com/autocad/-l \a
+- Lightwave 3D (Commerciale) l- http://www.newtek.com/lightwave.html --www.newtek.com/lightwave.html -l \a
+- Cinema 4D (Commerciale) l-http://www.maxon.net/it/--www.maxon.net/it/home.html -l \a
+- Bryce (Commerciale) l-http://www.daz3d.com/i/products/bryce/- --www.daz3d.com/i/products/bryce/-l \a
+- Poser (Commerciale, modellazione forme umane) l-http://poser.smithmicro.com/index.html --poser.smithmicro.com-l \a
+- Truespace (Freeware) l-http://www.caligari.com--www.caligari.com-l \a
+- 3D Canvas (Freeware) l-http://www.amabilis.com/--www.amabilis.com-l \a
+- Blender (Freeware) l-http://www.blender.org/--www.blender.org-l \a
+</p>]]>
+</body>
+
+</article>
+   

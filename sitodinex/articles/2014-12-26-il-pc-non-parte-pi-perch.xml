@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article id="2014-12-26-il-pc-non-parte-pi-perch">
+<section>Soluzioni</section>
+<subsection></subsection>
+<title>Il PC non parte più. Perché?</title>
+<image>button_help.jpg</image>
+<abstract>Può capitare che il nostro PC si blocchi all'improvviso o dia errori ai quali non riusciamo a trovare soluzione. Ecco i problemi più frequenti che possono capitare</abstract>
+<author>Denik</author>
+<email></email>
+<date>2014-12-26</date>
+<update>2014-12-27</update>
+<keyword></keyword>
+<body>
+<![CDATA[
+<p>
+Continuando ad usare il nostro pc può succedere che un bel giorno dobbiamo fronteggiare uno dei nostri più spaventosi incubi: il nostro computer non si accende più!
+Esistono molte cause che possono determinare il blocco della macchina, ma molte sono più frequenti e più facili da risolvere.
+La complessità di una macchina come il nostro PC è un buon motivo per tenerlo efficiente e stare attenti ad ogni minimo errore che si presenta. La maggior parte di noi però non tiene conto dei riavvii improvvisi, dei messaggi d'errore ed altre avvisaglie che possono incorrere mentre lo usiamo; fino a quando.. non lo potremo più usare.
+Cosa facciamo quando il pc non parte più? La prima cosa da fare è non lanciare il pc dalla finestra. Secondo, si procede per esclusione,  eliminando di volta in volta le possibili cause del blocco.
+Assicuriamoci prima di tutto che tutti i cavi siano connessi, per escludere subito la possibilità d'interruzioni di corrente o segnale.
+</p>
+
+<h3>Il PC non si accende</h3>
+<p>Se il nostro computer non dà segni di vita (non emette neppure i soliti rumorini) la diagnosi è spesso la rottura dell'alimentatore. Prima di sostituirlo, accertarsi che sia quello il vero motivo: scollegare dall'alimentatore tutti i cavi connessi tranne quelli della scheda madre. Tenere connessi solo i cavi della tastiera e il mouse. Se non succede niente lo stesso allora dobbiamo sostituire l'alimentatore.
+Spesso il problema deriva dall sovraccarico a cui è sottoposto l'alimentatore, forse a causa di aggiunta di schede, masterizzatori,  dischi, ecc. 
+Altra possibilità (ma più rara) è che la scheda madre o il processore ci abbiano abbandonato.
+</p>
+
+<h3>Il PC emette un lungo beep</h3>
+<p>Quando accendiamo il pc, viene eseguita una serie di test detti POST (Power On Self Test) che hanno lo scopo di individuare eventuali errori di funzionamento. Si tratta di brevissimi segnali acustici (beep) che, a seconda del numero e durata sonora, diagnosticano i componenti del PC (purtroppo, però, non in modo esaustivo).
+Se il pc non supera la fase iniziale di avvio e continua ad emettere un lungo bip, il problema può essere l'errato conteggio cella memoria RAM, dovuto probabilmente ad un'installazione non eseguita correttamente o ad un guasto delle barre di memoria.
+</p>
+
+<h3>Il computer si accende ma lo schermo rimane nero</h3>
+P<p>er prima cosa accertarsi che il cavo del monitor non si sia staccato dall'uscita della scheda video. Se continua a non dar segni di vita provare a collegarlo ad un altro pc, per vedere che sia effettivamente rotto.
+A volte il problema potrebbe risiedere nella scheda video, quindi accertarsi prima di tutto che la scheda sia inserita correttamente nello slot. Se lo è (e se il monitor funziona con altri pc) allora la scheda video è rotta.
+</p>
+
+<h3>Ad ogni avvio viene chiesto di premere F1 per continuare</h3>
+<p>Questa richiesta è accompagnata dalla necessità di entrare nel bios per modificare i parametri del messaggio. Alcuni problemi che generano il messaggio sono la velocità delle ventole troppo bassa, che provoca un surriscaldamento della CPU oppure un overclock del processore fallito.
+</p>
+
+<h3>Ad ogni accensione appare il messaggio: disco non di avvio sostituire e premere un tasto per riavviare</h3>
+<p>Dobbiamo controllare la sequenza di boot nel BIOS. Impostiamo come prima unità di boot il disco rigido (quello dove è situato il sistema operativo principale), e controlliamo lo stato dei led sul case. Se la spia rossa è continuamente accesa, allora il problema è il nostro hard disk. Verifichiamo che i collegamenti tra l'hard disk e la scheda madre siano corretti e che il BIOS riconosca correttamente il disco fisso. Se qualcosa non va allora il disco è rotto: in questo caso possiamo collegarlo come slave su un altro pc e tentare un recupero dei dati, verificando inoltre l'integrità del primo settore di avvio.</p>
+
+<p>Questo è il link di una pagina che spiega in dettaglio il significato dei vari beep di errore a seconda del tipo di scheda madre installata: l- http://www.pchell.com/hardware/beepcodes.shtml -- http://www.pchell.com/hardware/beepcodes.shtml -l (in inglese).
+</p>]]>
+</body>
+
+</article>
+   
