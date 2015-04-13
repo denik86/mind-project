@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<title>Game Maker - Quick Guide</title>
+</head>
+
+<body>
+<div id="head"><h1>Game Maker - Quick Guide</h1></div>
+<div id="navigation"></div>
+<div id="container">
+<h2>Definizioni</h2>
+<dl>
+<dt>Oggetto visible</dt>
+<dd>indica se le istanze di questo oggetto sono visibili</dd>
+<dt>Oggetto solid</dt>
+<dd>le collisioni vengono trattate in modo differente. usare solid solo con i muri</dd>
+<dt>Create Event</dt>
+<dd>settare le variabili iniziali</dd>
+<dt>destroy Event</dt>
+<dd>azioni da eseguire prima della sua distruzione</dd>
+<dt>Alarm Event</dt>
+<dd>cambi di direzione, ogni tot andature</dd>
+<dt>Collision Event</dt>
+<dd>oggetto solido</dd>
+<dt>End Of Animation</dt>
+<dd>usato soprattutto per le esplosioni, da eseguire una volta sola</dd>
+<dt>Move Torwards a Point</dt>
+<dd>seguire un'altra istanza</dd>
+</dl>
+<h2>Cambiare orientamento / direzione oggetto</h2>
+<ol>
+<li>Evento CREATE -> set variable "direction" to ??</li>
+<li>Si può fare in due modi:
+  <ol>
+    <li>Evento (di solito è un tasto) -&gt; set variable &quot;direction&quot; relative to ?? </li>
+    <li>Evento STEP -&gt; set variable direction relative to ?? (cambio automatico di direzione).</li>
+    </ol>
+<li>Trasformare lo sprite: Evento END STEP -&gt; transform sprite (angle = direction).
+</ol>
+<p>Se l'oggetto deve muoversi (alla pressione di un tasto o ad ogni step) si crea l'azione Move con direzione &quot;direction&quot;.</p>
+</div>
+</body>
+</html>
