@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<title>XHTML</title>
+</head>
+
+<body>
+<div id="head">HTML, XHTML e HTML5 - Introduzione</div>
+<div id="navigation"></div>
+<div id="container">
+
+<h1>Le regole di sintassi XHTML</h1>
+<p>XHTML è un linguaggio XML quindi:</p>
+<ul>
+  <li>i tag e gli attributi sono case sensitive (tutto in minuscolo)</li>
+  <li>i tag devono sempre essere chiusi (anche se sono vuoti)</li>
+  <li> &lt;br /&gt; e non &lt;br&gt;</li>
+  <li>per compatibilità con i vecchi browser va usata la forma &lt;p&gt;&lt;/p&gt; per i tag non vuoti (anche se privi di contenuto) e &lt;br /&gt; per gli elementi vuoti</li>
+  <li>i tag devono essere aperti e chiusi nell’ordine corretto</li>
+  <li>l’ordine con cui si inseriscono gli attributi è irrilevante</li>
+  <li>i valori degli attributi vanno riportati tra &quot;virgolette doppie&quot;</li>
+  <li>tutti gli attributi devono avere un valore</li>
+  <li>un elemento in linea non può contenere un elemento di blocco</li>
+</ul>
+<p>I browser cercano di visualizzare al meglio codice non valido, ma questo può portare ad interpretazioni arbitrarie.</p>
+<h3>Elementi che vengono ignorati</h3>
+<p>I browser ignorano completamente:</p>
+<ul>
+  <li>le interruzioni di linea non identificate con &lt;br/&gt; e non contenute in un tag &lt;pre&gt;</li>
+  <li>tabulazioni e spazi multipli</li>
+  <li>tag &lt;p&gt; nidificati ( &lt;p&gt;&lt;p&gt; = &lt;p&gt; )</li>
+  <li>tag sconosciuti</li>
+  <li>commenti (ATTENZIONE: all'interno di un commento non è possibile inserire la stringa '--' (doppi trattini))</li>
+  </ul>
+<h2>Struttura di base di un documento XHTML</h2>
+<p>Ecco come si presenta il codice di una semplice pagina XHTML basata sulla DTD Strict</p>
+<div class="boxcode">
+<span>Listato 1. Esempio di codice XHTML Strict</span>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang=&quot;it&quot; lang=&quot;it&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;La mia prima pagina XHTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Benvenuto!&lt;/h1&gt;
+    &lt;p&gt;Questo è il mondo di XHMTL!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<p>Per poter verificare che questa pagina è valida e ben formata, è opportuno imparare a fare la convalida: Si va all'url http://validator.w3.org copiando il codice, caricando la pagina html oppure inserendo l'url della pagina e cliccare su &quot;Validate this page&quot;. Se il documento è valido si riceverà una risposta di questo tipo: &quot;<em>Congratulations, this document validates as XHTML 1.0 Strict!</em>&quot;.</p>
+<p>Analizziamo ora, una per una, le quattro sezioni essenziali del documento:</p>
+<h3>Il prologo XML</h3>
+<div class="boxcode">
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre>
+</div>
+<p>La nostra pagina inizia con una rida di codice <span class="code"> &lt;?xml version=&quot;1.0&quot;?&gt; </span>. La sua funzione è rendere esplicito il fatto che il documento è XML. Non è obbligatoria ma il suo uso è raccomandato dal W3C, per specificare:</p>
+<ul>
+  <li>la  versione xml (version) obbligatoria</li>
+  <li>il tipo di codifica dei caratteri (encoding) opzionale</li>
+  <li>specificare che il documento non fa riferimento ad entità esterne (standalone=&quot;yes&quot;) opzionale </li>
+  </ul>
+<p>Purtroppo però molti browser non lo gestiscono correttamente, causando visualizzazioni scorrette o crash.</p>
+<h4>Dichiarazione di tipo documento</h4>
+<div class="boxcode">
+<pre>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre>
+<p>La dichiarazione del DOCTYPE (obbligatoria per il validatore), solitamente viene generata in modo automatico dall'editor HTML specifico. Ha il compito di informare il browser che si tratta di un documento html relativo alle specifiche e a quale delle tre DTD si conforma (in questo caso <em>XHTML 1.0 Strict</em>) e qual'è la lingua primaria.</p>
+<p>Se non si specifica un doctype valido, i browser passano in modalità "<em>quirks mode</em>", ovvero una tecnica che consente ai browser di essere retrocompatibili con le pagine web che non sono conformi allo standard.</p>
+<h3>L'elemento radice: Namespace e lingua</h3>
+<div class="boxcode">
+    <pre>&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"&gt;</pre>
+    </div>
+    <p>L'elemento radice di un documento xhtml deve essere &lt;html&gt;. Questo elemento può assumere vari attributi:</p>
+    <ul>
+    <li><strong>dir</strong>:</li>
+    <li><strong>lang</strong>:</li>
+    <li><strong>xml:lang</strong>:</li>
+    <li><strong>xlmns</strong>:</li>
+    </ul>
+    <p>L'unico obbligatorio è xmlns, che specifica il namespace predefinito per XHTML. Un namespace è una collezione di tipi di elementi e nomi di attributi. Per ragioni di accessibilità si deve definire la lingua principale del documento: si può fare lato server o con xml:lang (che può essere usato anche in linea).</p>
+<h3>La testata del documento (intestazione)</h3>
+    <div class="boxcode">
+        <pre>
+&lt;head&gt;
+&lt;title&gt;La mia prima pagina XHTML&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+  </div>
+   <p>La parte contenuta tra i tag &lt;head&gt; e &lt;/head&gt; viene chiamata intestazione. La funzione principale è contenere informazioni che non vengono direttamente visualizzate nella pagina, ma che impartiscono direttive al browser quali: titolo (obbligatorio), comandi meta, richiami ai fogli di stile, script, ecc. Nell'esempio abbiamo inserito solamente il tag &lt;title&gt;. Nel prossimo capitolo approfondiremo i tag all'interno della sezione head.</p>
+<h3>Il corpo del documento</h3>
+    <div class="boxcode">
+        <pre>
+            &lt;body&gt;
+    &lt;h1&gt;Benvenuto!&lt;/h1&gt;
+    &lt;p&gt;Questo è il mondo di XHMTL!&lt;/p&gt;
+  &lt;/body&gt;
+</pre>
+        </div>
+        <p>Il corpo del documento è la sezione in cui si sviluppa il contenuto. E' racchiusa tra i tag &lt;body&gt; e &lt;/body&gt;. Gli elementi che possono comparire all'interno del corpo sono in genere suddivisi in due categorie: elementi blocco ed elementi inline. Nel prossimo capitolo approfondiremo tutti gli elementi all'interno della sezione body.</p>
+   
+<h2>Elementi nella sezione HEAD</h2>
+    Tutto ciò che si trova all'interno della struttura head non sarà visualizzato ma interpretato dal browser (l'unica cosa che viene vista è l'elemento &lt;title&gt;, sulla barra del titolo, ma può contribuire anche al posizionamento nei motori di ricerca).</p>
+    <p> Gli elementi che possono apparire nella testata sono:</p>
+    <ul>
+        <li><strong>&lt;base&gt;</strong>: usato per definire l'URL di base della pagina. Utilissimo per la risoluzione dei link relativi (Esempio: &lt;base href="/miacartella/" /&gt;).</li>
+        <li><strong>&lt;isindex&gt;</strong>: Sconsigliato. E' un modo per creare elementi simili alle caselle di testo</li>
+        <li><strong>&lt;link&gt;</strong>: contiene informazioni su documenti esterni collegati (css o shortcut icon). Usato soprattutto per i CSS.</li>Gli attributi più comuni sono:
+        <ul>
+            <li>&lt;link rel="stylesheet" type="text/css" href="/file.css /&gt;"</li>
+            <li>&lt;link rel="alternate stylesheet" type="text/css" href="/file2.css /&gt;"</li>
+            <li>&lt;link rel="shortcut icon" href="/img.ico" /&gt;</li>
+            <li>&lt;link rel="next" title="Next Page" href="/next.html" /&gt;</li>
+        </ul>
+        <li><strong>&lt;meta&gt;</strong>: specifica informazioni di vario tipo sul documento</li>
+        <li><strong>&lt;noscript&gt;</strong>: usato per visualizzazioni alternative nei browser che non supportano gli script</li>
+        <li><strong>&lt;object&gt;</strong>: racchiude un oggetto</li>
+        <li><strong>&lt;script&gt;</strong>: contiene script di programmazione </li>
+        <li><strong>&lt;style&gt;</strong>: definisce le regole di formattazione per il documento corrente</li>
+        <li><strong>&lt;title&gt;</strong>: specifica il titolo del documento che compare nella barra del titolo del browser</li>
+    </ul>
+    <h3>I tag META</h3>
+    <p>La sezione head contiene una serie di comandi, chiamati <em>MetaComandi</em>, che non producono alcuna variazione visiva sulla pagina, ma sono indispensabili per altre attività quali la validazione e la lettura da parte dei motori di ricerca. I metacomandi inseriscono informazioni aggiuntive sul contenuto del documento che si sta creando, come ad esempio l'autore. Non esistono limtazioni sul numero di metatag inseriti. Ci sono due tipi di tag meta:</p>
+    <ul>
+        <li><strong>http-equiv</strong></li>
+        <li><strong>name</strong></li>
+    </ul>
+    <h4>Tag meta http-equiv</h4>
+    <p>L'informazione viene processata come se fosse presente in un header di risposta proveniente da un server HTTP, quindi prima del documento. Possono condizionare la manipolazione del documento. Una spiegazione dettagliata si trova in <a href="http://vancouver-webpages.com/META/">questa pagina</a>.</p>
+    <p>Alcuni comandi http-equiv sono:</p>
+    <ul>
+        <li>&lt;meta http-equiv="refresh" content="15" /&gt;</li>
+        Esegue il refresh dopo 15 secondi
+        <li>&lt;meta http-equiv="refresh" content="1; URL=nuovaURL" /&gt;</li>
+        Esegue il refresh verso una nuova url
+        <li>&lt;meta http-equiv="expires" content="5" /&gt;</li>
+        Pagina non più valida
+    </ul>
+    <p>Un importante comando è il <strong>Content Type</strong>:</p>
+    <div class="boxcode">
+        <pre>&lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /&gt;</pre>
+    </div>
+    <p>Nell'esempio si indica al browser che deve caricare il set di caratteri occidentale. Un altro valore molto usato è UTF-8</p>
+    <p>Anche il content type può essere definito lato server tramite l'uso di uno script</p>
+    <h4>Tag meta name</h4>
+    <p>Questi tag inseriscono informazioni riguardanti il documento. E' possibile creare valori propri (es. suggeriti dai motori di ricerca). Le informazioni possibili sono:</p>
+    <ul>
+        <li>
+            <em>description</em>: breve descrizione dei contenuti della pagina web. E' particolarmente utile quando la pagina contiene poco testo (es. statistiche). E' stato pensato per i motori di ricerca, in particolare nelle SERP.
+        </li>
+        <li><em>keywords</em>: lista di parole chiave separate da una virgola. Anche questo è stato pensato per i motori di ricerca.</li>
+        <li><em>copyright</em></li>
+        <li><em>author</em></li>
+        <li><em>robots</em>: viene utilizzato per prevenire l'indicizzazione di una pagina (dice ai motori di ricerca quali pagine indicizzare e quali no). Possibili valori sono: index, noindex (non indicizzabile), follow (segui i link della pagina), nofollow, all (index e follow), none (noindex e nofollow).</li>
+        <li><em>rating</em>: classificazione del contenuto</li>
+    </ul>
+<h2>Corpo del documento</h2>
+<p>La parte contenuta tra i tag &lt;body&gt; e &lt;\body&gt; viene chiamata corpo del documento o semplicemente, sezione <em>body</em>. Questa sezione contiene la pagina vera e propria, o almeno quello che si vedrà a video. Qui vengono inserite le immagini, i suoni, i filmati, e il testo, link e quant'altro. La sezione <em>body</em> contiene quindi tutti i tag che descrivono la <em>struttura</em> del documento: non devono essere usati elementi relativi alla <em>presentazione</em> visuale, ma si devono usare gli elementi per il loro significato e non per come vengono visualizzati dai browser (&lt;em&gt; vs &lt;i&gt;)</p>
+</div>
+</div>
+</body>
+</html>
