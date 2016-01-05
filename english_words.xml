@@ -8,4 +8,18 @@
 		</translation>
 	</word>
 
+	<word from="eng" to="ita">
+		table
+		<translation>
+			<ita trad="1">tavolo</ita>
+		</translation>
+	</word>
+
+	<word from="eng" to="ita">
+		hello
+		<translation>
+			<ita trad="1">ciao</ita>
+		</translation>
+	</word>
+
 </english_words>
