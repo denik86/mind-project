@@ -1,0 +1,16 @@
+<english_words>
+    <word from="eng" to="ita">home
+        <tra>casa
+            <note>nota</note>
+        </tra>
+        <tra>abitazione</tra>
+        <note>nota word</note>
+        <prova name="john">questa è una prova</prova>
+    </word>
+    <word from="eng" to="ita">word
+        <note>note various</note>
+        <tra>mosaico
+            <note>il mosaico è un cazo</note>
+        </tra>
+    </word>
+</english_words>
